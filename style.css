@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+    outline: none;
+
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+
+}
+
+
+.background-image {
+
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+
+}
+
+main {
+    width: 370px;
+    height: 712px;
+    border-radius: 20px;
+    background: #DBDBDB;
+    ;
+    margin: 0 auto 40px;
+    padding: 44px 24px 23px;
+
+}
+
+h1 {
+    text-align: center;
+    margin: 0 auto 12px;
+    color: green
+}
+
+label {
+    color: #7777;
+    font-weight: 400px;
+    font-size: 14px;
+}
+
+select,input {
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    background: #FFFFFF;
+    margin-bottom: 24px;
+    border: 1px solid #BBBBBB;
+    padding: 15px;
+    font-weight: 700px;
+    font-size: 16px;
+    color: #555555;
+    appearance: none;
+    cursor: pointer;
+
+}
+
+button {
+    border-radius: 5px;
+    background: green;
+    width: 100%;
+    border: none;
+    height: 48px;
+    color: #FFFFFF;
+    font-weight: 700px;
+    font-Size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+section {
+    border-radius: 20px;
+    border: 1px solid green;
+    margin-top: 12px;
+    padding: 5px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.arrow-img {
+    margin: 15px 0;
+    height: 40px;
+    filter: invert(42%) sepia(77%) saturate(3858%) hue-rotate(73deg) brightness(93%) contrast(105%);
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    height: 89px;
+
+}
+
+.currency {
+    font-size: 14px;
+    color: #777777;
+    
+}
+
+
+.currency-value,.currency-value-to-convert {
+    font-weight: 700px;
+    font-size: 20px;
+    color: #555555;
+}
+
+@media screen and (max-widht: 750px) {
+    
+    main {
+        height: auto;
+        padding: 12px;
+    }
+
+    select,input{
+        margin-bottom: 12px;
+
+    }
+
+    section {
+        height: auto;
+        padding: 8px;
+    }
+}
